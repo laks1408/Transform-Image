@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Original and Transformed Image</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Original and Transformed Image</h1>
+        <div class="image-comparison">
+            <div>
+                <h2>Original Image</h2>
+                <img src="data:image/png;base64,{{ original_image }}" alt="Original Image">
+            </div>
+            <div>
+                <h2>Transformed Image</h2>
+                <img src="data:image/png;base64,{{ processed_image }}" alt="Transformed Image">
+            </div>
+        </div>        
+    </div>
+    <a href="/" class="button">Go Back</a>
+</body>
+</html>
